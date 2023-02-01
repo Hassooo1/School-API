@@ -5,9 +5,9 @@ Source code of school backend django rest api
 <h1 align="center">Hi 👋, I'm Hasnain Khan</h1>
 <h3 align="center">A passionate full stack developer from Pakistan</h3>
 
-- 🔭 I’m currently working on [Glossary Store](https://github.com/Hassooo1/Glossary-Store)
+- 🔭 I’m currently working on [School API](https://github.com/Hassooo1/School-API)
 
-- 👯 I’m looking to collaborate on [Onlinestore](https://github.com/Hassooo1/Onlinestore)
+- 👯 I worked on many projects like [BTRE](https://github.com/Hassooo1/BTRE)
 
 - 📫 How to reach me **hasnainkhan9446@gmail.com**
 
