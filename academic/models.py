@@ -34,3 +34,12 @@ class Class(models.Model):
 
     def __str__(self):
         return self.name
+
+class Assignment(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    due_date = models.DateTimeField()
+    class_obj = models.ForeignKey(Class, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
