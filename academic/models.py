@@ -1,4 +1,5 @@
 from django.db import models
+from . models import Class
 
 # Create your models here.
 
@@ -21,6 +22,17 @@ class Teacher(models.Model):
     address = models.CharField(max_length=200)
     phone_number = models.CharField(max_length=20)
     email = models.EmailField()
+    class_taught = models.ManyToManyField(Class, related_name='teachers')
+
+    def __str__(self):
+        return self.name
+
+
+class Class(models.Model):
+    name = models.CharField(max_length=100)
+    teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
+    students = models.ManyToManyField(Student)
+    schedule = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
